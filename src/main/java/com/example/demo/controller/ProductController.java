@@ -22,5 +22,8 @@ public class ProductController {
         model.addAttribute("menu", menu);
         return "menu";
     }
-
+    @GetMapping("/")
+    public String homePage(Model model){
+        return "index";
+    }
 }
